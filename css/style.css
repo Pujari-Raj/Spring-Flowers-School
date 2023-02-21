@@ -1,0 +1,387 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Navbar*/
+.web_logo {
+    width: 200px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.nav-item .nav-link{
+    /* color: #fff; */
+    color: #3C4048;
+    font-weight: 500;
+}
+
+ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    color: #3C4048;
+}
+
+ul li a:hover{
+    color: #224B0C !important;
+}
+
+ul li a.active {
+    /* color: #fff; */
+    color: #224B0C;
+    font-weight: 600;
+    /* background-color: #5A8F7B; */
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -50%;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+.banner-image {
+    background-image: url('../assets/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timetable-banner-image {
+    background-image: url('../assets/spring_tt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image-text {
+    color: #100720;
+    font-size: 52px;
+}
+
+.custom-btn{
+    font-size: 0.95rem;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 12px 13px;
+    background: #58c665;
+    border: 1px solid transparent;
+}
+
+.custom-btn:hover{
+    border: 1px solid #B6E2A1;
+    background-color: transparent;
+    transition: 1s;
+}
+
+/* Cards(Our Features) */
+
+.features_heading {
+    color: #6B728E;
+}
+
+.custom-card {
+    border-radius: 0px !important;
+    background-color: #1EAAF1;
+}
+
+.custom-card:hover{
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s;
+}
+
+.card-icon {
+    background-color: #FFF9F9;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+
+.Teacher-card{
+    border: 0px solid #1EAAF1 !important;
+}
+
+.special-ed-card {
+    border: 0px solid #8CC152 !important;
+    background-color: #8CC152;
+}
+
+.lib-card{
+    border: 0px solid #5D50C6 !important;
+    background-color: #5D50C6;
+}
+
+.certificate-card{
+    border: 0px solid #F1453D !important;  
+    border-radius: 0px !important;  
+    background-color: #F1453D;
+}
+
+.card_icon {
+    font-size: 50px;
+    color: #1EAAF1;
+}
+
+.custom-card .card-body h5, p{
+    color: #fff;
+}
+
+/*Timetable*/
+
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+
+.bg-sky.box-shadow {
+    box-shadow: 0px 5px 0px 0px #00a2a7
+}
+
+.bg-orange.box-shadow {
+    box-shadow: 0px 5px 0px 0px #af4305
+}
+
+.bg-green.box-shadow {
+    box-shadow: 0px 5px 0px 0px #4ca520
+}
+
+.bg-yellow.box-shadow {
+    box-shadow: 0px 5px 0px 0px #dcbf02
+}
+
+.bg-pink.box-shadow {
+    box-shadow: 0px 5px 0px 0px #e82d8b
+}
+
+.bg-purple.box-shadow {
+    box-shadow: 0px 5px 0px 0px #8343e8
+}
+
+.bg-lightred.box-shadow {
+    box-shadow: 0px 5px 0px 0px #d84213
+}
+
+.bg-darkgreen {
+    background-color: rgb(14, 255, 14);
+}
+
+.bg-sky {
+    background-color: #02c2c7
+}
+
+.bg-orange {
+    background-color: #e95601
+}
+
+.bg-green {
+    background-color: #5bbd2a
+}
+
+.bg-yellow {
+    background-color: #f0d001
+}
+
+.bg-pink {
+    background-color: #ff48a4
+}
+
+.bg-purple {
+    background-color: #9d60ff
+}
+
+.bg-lightred {
+    background-color: #ff5722
+}
+
+.padding-15px-lr {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.padding-5px-tb {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.margin-10px-bottom {
+    margin-bottom: 10px;
+}
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.margin-10px-top {
+    margin-top: 10px;
+}
+.font-size14 {
+    font-size: 14px;
+}
+
+.text-light-gray {
+    color: #d6d5d5;
+}
+.font-size13 {
+    font-size: 13px;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+/*Profile*/
+
+.student-profile .card {
+    border-radius: 5px;
+  }
+  
+  .student-profile .card{
+    margin-bottom: 10px;
+  }
+
+  .student-profile .card .card-header .profile_img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+  }
+  
+  .student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .student-profile .card p {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .student-profile .table th,
+  .student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+  }
+
+/*Footer*/
+
+.footer-section {
+    background-color: #A6BB8D;
+}
+
+.footer_web_logo {
+    width: 250px;
+    height: 50px;
+}
+
+footer p{
+    color: #000;
+}
+
+.connect_tite {
+    font-size: 1.45rem;
+}
+
+.footer-social-links a{
+    padding-right: 20px;
+    color: #000 !important;
+}
+
+.footer-social-links a i{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.footer-col-1 li{
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+
+.footer-col-1 i{
+    font-size: 10px;
+}
+
+.subscribe-btn{
+    color: #fff !important;
+    font-size: 16px;
+    background-color: #5d50c6  !important;
+    
+    border: none !important;
+    width: 100% !important;
+    border-radius: 2px;
+}
+
+.subscribe-btn:hover{
+    background: #02aafde3 !important;
+}
+
+.quick_links {
+    color: #000;
+}
+
+.quick_links:hover{
+    font-weight: 600;
+}
+
+/*MEDIA QUERIES*/
+
+
+
+@media screen and (max-width: 767px) {
+    .bg-image-text {
+        
+        font-size: 32px;
+    }
+    .features_heading {
+        padding-bottom: 15px;
+    }
+
+    .custom-card {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .custom-card {
+        margin-bottom: 55px;
+    }
+}
