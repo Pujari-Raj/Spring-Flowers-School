@@ -5,6 +5,7 @@ Technologies/ Tools Used:
 - HTML
 - CSS
 - Javascript
+- Bootstrap
 
-#### This project will get updated on multiple intervals , only after final interval project preview will posted.
+#### This project will get updated on multiple intervals , only after final  project preview will posted.
  
