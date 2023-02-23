@@ -7,5 +7,5 @@ Technologies/ Tools Used:
 - Javascript
 - Bootstrap
 
-#### This project will get updated on multiple intervals , only after final  project preview will posted.
+#### This project will get updated on multiple intervals , only after final code project preview will posted.
  
