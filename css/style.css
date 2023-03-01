@@ -75,6 +75,7 @@ ul li a.active {
 .bg-image-text {
     color: #100720;
     font-size: 52px;
+    font-weight: 100;
 }
 
 .custom-btn{
@@ -361,9 +362,33 @@ footer p{
     font-weight: 600;
 }
 
+/*Login Page*/
+
+.login-banner-image {
+    background-image: url('../assets/login-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-btn:hover{
+    /* border: 1px solid #B6E2A1;
+    background-color: transparent; */
+    color: #fff;
+}
+
+.login_title{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login_btn {
+    display: inline-block;
+    width: 100%;
+}
+
 /*MEDIA QUERIES*/
-
-
 
 @media screen and (max-width: 767px) {
     .bg-image-text {
