@@ -70,20 +70,54 @@
     <div class="w-100 vh-100 d-flex justify-content-center align-items-center">
       <div class="content d-flex flex-column justify-content-center align-items-center">
         <div class="text-center">
-          <h1 class="bg-image-text">
-            Kids Are The Best <br />
-            Explorers In The World
-          </h1>
+          <!-- <h1 class="bg-image-text">
+            Self-belief and Hard Work  <br />
+            Will Always Earn You Success
+          </h1> -->
         </div>
-        <div class="">
+        <!-- <div class="">
           <button type="button" class="btn btn-secondary custom-btn">
             Visit Us To Know More
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- Banner Image-End-->
   </section>
+
+  <!---Result-section--->
+
+  <div class="container mb-2">
+    <h4 class="m-4 text-center">Exam Results</h4>
+
+    <div class="grades_container col-12 col-md-8 mx-auto p-5">
+        <form class="">
+          <div class="mb-3">
+            <select class="form-select" id="student_subject" aria-label="Default select example"  onChange="displayGrades()">
+              <option selected>Select your subject</option>
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Science">Science</option>
+              <option value="Social-Studies">Social Studies</option>
+              <option value="Physical-Activity">Physical-Activity</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text greenBg">Marks</span>
+            <input id="student_marks" type="text" class="form-control" aria-label="readonly  marks" aria-describedby=" marks" 
+              readonly>
+          </div>
+  
+          <div class="input-group mb-3">
+            <span class="input-group-text greenBg">Grade</span>
+            <input type="text"  id="student_grades" class="form-control" aria-label="readonly grade" aria-describedby="grade" 
+              readonly>
+          </div>
+        </form>
+    </div>  
+  </div>
+
   <!---footer-start---->
   <footer class="text-center text-lg-start footer-section">
 
@@ -166,7 +200,6 @@
   </footer>
   <!---footer-end---->
  
-
    <!---JS--->
   <!---Bootstrap-JS--->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

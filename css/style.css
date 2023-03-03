@@ -399,8 +399,14 @@ footer p{
 .exam-banner-image {
     background-image: url('../assets/exam_banner.png');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
+}
+
+.grades_container{
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 50px;
 }
 
 /*MEDIA QUERIES*/
