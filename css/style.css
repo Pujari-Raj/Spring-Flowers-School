@@ -409,6 +409,10 @@ footer p{
     margin-bottom: 50px;
 }
 
+/* #list_activities {
+    display: none;
+} */
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 767px) {
