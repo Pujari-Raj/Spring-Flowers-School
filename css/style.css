@@ -388,6 +388,21 @@ footer p{
     width: 100%;
 }
 
+.login_error{
+    color: rgb(234, 13, 13);
+    font-size: 18px;
+    display: none;   
+}
+
+/*Exam-Results*/
+
+.exam-banner-image {
+    background-image: url('../assets/exam_banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 767px) {

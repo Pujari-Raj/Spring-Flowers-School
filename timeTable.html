@@ -49,11 +49,12 @@
                 <div class="">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="student_name" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Student
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" target="_blank" href="./Profile.html">Profile</a></li>
+                              <li><a class="dropdown-item  border-bottom" target="_blank" href="./Profile.html">Profile</a></li>
+                              <li><a class="dropdown-item" target="" href="./StudentLogin.html">Logout</a></li>                  
                             </ul>
                           </li>
                     </ul>
@@ -379,6 +380,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
     <script src="./js/script.js"></script>
+    <script>
+      document.getElementById("student_name").innerHTML = localStorage.getItem('username');
+    </script>
 </body>
 
 </html>

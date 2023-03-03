@@ -42,21 +42,22 @@
               <a class="nav-link" target="_blank" href="./timeTable.html">Time Table</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./ExamResults.html">Exam Results</a>
+              <a class="nav-link" target="_blank" href="./ExamResults.html">Exam Results</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./ExtaActivities.html">Extra Activities</a>
+              <a class="nav-link" target="_blank" href="./ExtaActivities.html">Extra Activities</a>
             </li>
           </ul>
           <div class="">
             <ul class="navbar-nav me-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" id="student_name" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Student
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" target="_blank" href="./Profile.html">Profile</a></li>
+                  <li><a class="dropdown-item border-bottom" target="_blank" href="./Profile.html">Profile</a></li>
+                  <li><a class="dropdown-item" target="" href="./StudentLogin.html">Logout</a></li>                  
                 </ul>
               </li>
             </ul>
@@ -243,6 +244,9 @@
     crossorigin="anonymous"></script>
   <!---Custom-JS--->
   <script src="./js/script.js"></script>
+  <script>
+    document.getElementById("student_name").innerHTML = localStorage.getItem('username');
+  </script>
 </body>
 
 </html>
