@@ -9,21 +9,24 @@ for (i = 0; i < menuLength; i++) {
     }
 }
 
-// Login functionality
-
+// Student Credentials
 let username = "Pujari Basvaraj";
 let password = "Pass@123";
 
+// getting all fields value
 const form = document.getElementById("login_form");
 const user_username = document.getElementById("name");
 const user_pass = document.getElementById("password");
 
+// function for validating form & Login Functionaility
 function validateForm() {
     validateInputs();
-
+    
+    // student login
     Login();
 }
 
+// function for setting error
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector(".error");
@@ -33,6 +36,7 @@ const setError = (element, message) => {
     inputControl.classList.remove('success');   
 }
 
+// function for removing error
 const setSuccess = element => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -42,6 +46,7 @@ const setSuccess = element => {
     inputControl.classList.remove('error');
 }
 
+// function for validating fields
 const validateInputs = () => {
     const usernameValue = user_username.value.trim();
     const passwordValue = user_pass.value.trim();
@@ -59,6 +64,7 @@ const validateInputs = () => {
     }
 }
 
+// function for student login
 const Login = () => {
     console.log('function called');
     let user_username = document.getElementById("name").value;
@@ -116,7 +122,6 @@ function displayGrades() {
     }
 }
 
-
 // Adding Activity Functionality
 function addActivity() {
     let name_activity = document.getElementById("activity_name").value;
@@ -125,7 +130,7 @@ function addActivity() {
     alert("Activity Added Successfully");
 }
 
-// Displaying Functionaility
+// Displaying Activity Functionaility
 function activityList() {
     console.log('list function called');
 
