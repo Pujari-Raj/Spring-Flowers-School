@@ -14,33 +14,73 @@ for (i = 0; i < menuLength; i++) {
 let username = "Pujari Basvaraj";
 let password = "Pass@123";
 
+const form = document.getElementById("login_form");
+const user_username = document.getElementById("name");
+const user_pass = document.getElementById("password");
+
+function validateForm() {
+    validateInputs();
+
+    Login();
+}
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector(".error");
+
+    errorDisplay.innerHTML = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');   
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+}
+
+const validateInputs = () => {
+    const usernameValue = user_username.value.trim();
+    const passwordValue = user_pass.value.trim();
+
+    if (usernameValue === '' || usernameValue == null) {
+        setError(user_username, 'Username is required');
+    }else{
+        setSuccess(user_username);
+    }
+
+    if (passwordValue === '' || passwordValue == null) {
+        setError(user_pass, 'Password is required');
+    }else{
+        setSuccess(user_pass);
+    }
+}
 
 const Login = () => {
     console.log('function called');
-    let user_username = document.getElementById("email").value;
+    let user_username = document.getElementById("name").value;
     let user_pass = document.getElementById("password").value;
 
     // console.log(user_email, user_pass);
+    if (user_username.length>0 && user_pass.length>0) {
+        document.querySelector(".login_error").style.display = "block";
+        console.log('Invalid Login Credentials!!!!!');
+    }
+
     if (user_username == username && user_pass == password) {
         console.log('Login Credentials Matched');
         localStorage.setItem('username', user_username);
+        
+        document.querySelector(".login_error").style.display = "none";
 
         window.location.href = 'index.html';
-    }
-
-    //  if (user_email.length == 0 && user_pass.length == 0) {
-    //     document.querySelector('.email')
-    //     document.querySelector('.password')
-    //  }
-
-    else {
-        document.querySelector(".login_error").style.display = "block";
-        console.log('Invalid Login Credentials!!!!!');
     }
 };
 
 // Exam Grades Functionality
-
 function displayGrades() {
     let subject = document.getElementById("student_subject").value;
     let marks = document.getElementById("student_marks");
@@ -78,7 +118,6 @@ function displayGrades() {
 
 
 // Adding Activity Functionality
-
 function addActivity() {
     let name_activity = document.getElementById("activity_name").value;
     let details_activity = document.getElementById("activity_details").value;
@@ -87,7 +126,6 @@ function addActivity() {
 }
 
 // Displaying Functionaility
-
 function activityList() {
     console.log('list function called');
 
