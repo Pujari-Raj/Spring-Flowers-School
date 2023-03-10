@@ -1,3 +1,4 @@
+// for active menu of navbar
 const currentLocation = location.href;
 const menuItem = document.querySelectorAll('a');
 const menuLength = menuItem.length;
@@ -153,12 +154,6 @@ function activityList() {
                     let activityBody = document.getElementById("activity_id");
 
                     let activtyRow = document.createElement("tr");
-
-                    // let activityId = document.createElement("th");
-                    // activityId.setAttribute("id", "activity_id");
-                    // activityId.setAttribute("scope", "row");
-                    // activityId.innerHTML = j;
-                    // activity_list.appendChild(activityId);
 
                     let activityName = document.createElement("td");
                     activityName.setAttribute("id", "activity_name");
