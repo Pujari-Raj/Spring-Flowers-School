@@ -1,0 +1,46 @@
+{
+    "student": [
+        {
+            "studentid" : "0108",
+            "username": "Pujari Basvaraj",
+            "password": "Pass@123",
+            "English": {"marks": "98", "grade": "A+"},
+            "Hindi": {"marks": "75", "grade": "A+"},
+            "Maths": {"marks": "70", "grade": "A"},
+            "Sciene": {"marks": "85", "grade": "A+"},
+            "SocialStudies": {"marks": "98", "grade": "A+"},
+            "dob": "31/05/2001",
+            "email": "pujari@gmail.com",
+            "gender": "male",
+            "bloodgroup": "B+"
+        },
+        {
+            "studentid" : "0109",
+            "username": "Raj Pujari",
+            "password": "Pass@131",
+            "English": {"marks": "90", "grade": "A+"},
+            "Hindi": {"marks": "70", "grade": "A+"},
+            "Maths": {"marks": "75", "grade": "A"},
+            "Sciene": {"marks": "89", "grade": "A+"},
+            "SocialStudies": {"marks": "89", "grade": "A+"},
+            "dob": "13/04/2000",
+            "email": "rampujari@gmail.com",
+            "gender": "male",
+            "bloodgroup": "B+"
+        },
+        {
+            "studentid" : "0110",
+            "username": "Sameera Pujari",
+            "password": "Pass@152",
+            "English": {"marks": "90", "grade": "A+"},
+            "Hindi": {"marks": "72", "grade": "A+"},
+            "Maths": {"marks": "77", "grade": "A"},
+            "Sciene": {"marks": "89", "grade": "A+"},
+            "SocialStudies": {"marks": "92", "grade": "A+"},
+            "dob": "13/04/1998",
+            "email": "arjun@gmail.com",
+            "gender": "female",
+            "bloodgroup": "B+"
+        }
+    ]
+}

@@ -79,7 +79,7 @@ const Login = () => {
 
     if (user_username == username && user_pass == password) {
         console.log('Login Credentials Matched');
-        localStorage.setItem('username', user_username);
+        // localStorage.setItem('username', user_username);
         
         document.querySelector(".login_error").style.display = "none";
 
