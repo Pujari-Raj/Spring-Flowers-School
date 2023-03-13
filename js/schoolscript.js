@@ -108,8 +108,11 @@ const Login = () => {
         if (students[i].username == user_username && students[i].password == user_pass) {
             validUser = true;
             console.log('validUser');
-            sessionStorage.setItem("studentId", students[i].studentid);
-            sessionStorage.setItem("username", students[i].username);
+            // sessionStorage.setItem("studentId", students[i].studentid);
+            // sessionStorage.setItem("username", students[i].username);
+
+            localStorage.setItem("studentId", students[i].studentid);
+            localStorage.setItem("username", students[i].username);
 
             document.querySelector(".login_error").style.display = "none";
             
@@ -120,4 +123,45 @@ const Login = () => {
         window.location.href = "index.html";
     }
 
+}
+
+
+//function for marks
+function Marks() {
+    console.log('calling marks');
+    fetch('./data/Studentdata.json')
+    .then((resp) => resp.json())
+    .then((json) => {
+        students = JSON.parse(JSON.stringify(json)).student;
+
+        DisplayMarks();
+    });    
+}
+
+//
+function DisplayMarks() {
+    console.log('calling display marks');
+    let subject = document.getElementById("student_subject").value;
+    let marks = document.getElementById("student_marks");
+    let grade = document.getElementById("student_grades");
+
+    marks.value = "";
+    grade.value = "";
+
+    //
+    for (let i = 0; i < students.length; i++) {
+        
+        if (students[i].studentid === localStorage.getItem('studentId')) {
+            for(const key in students[i]){
+
+                //
+                if (students[i].hasOwnProperty(key)) {
+                    if (subject == key) {
+                       marks.value = students[i][key]["marks"];
+                       grade.value = students[i][key]["grade"]; 
+                    }
+                }
+            }
+        }
+    }
 }
