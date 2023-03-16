@@ -122,11 +122,10 @@ const Login = () => {
     if (validUser) {
         window.location.href = "index.html";
     }
-
 }
 
 
-//function for marks
+//function for calling-marks function
 function Marks() {
     console.log('calling marks');
     fetch('./data/Studentdata.json')
@@ -138,7 +137,7 @@ function Marks() {
     });    
 }
 
-//
+//function for displaying the marks of particular student
 function DisplayMarks() {
     console.log('calling display marks');
     let subject = document.getElementById("student_subject").value;
@@ -164,4 +163,113 @@ function DisplayMarks() {
             }
         }
     }
+}
+
+// function for fetching student profile data
+function studentprofileData() {
+    console.log('calling studentprofileData');
+    fetch('./data/Studentdata.json')
+    .then((resp) => resp.json())
+    .then((json) => {
+        students = JSON.parse(JSON.stringify(json)).student;
+
+        //
+        fetchStudentProfileData();
+    });
+}
+
+//
+function fetchStudentProfileData(){
+
+    console.log('calling fecthing data');
+    //
+    let studentId = document.getElementById("studentid");
+    let studentUsername = document.getElementById("studentusername");
+    let studentDob = document.getElementById("studentdob");
+    let studentEmail = document.getElementById("studentemail");
+    let studetGender = document.getElementById("studentgender");
+    let studentBloodgroup = document.getElementById("studentbloodgroup");
+
+    //
+    for (let i = 0; i < students.length; i++) {
+        
+        if (students[i].studentid == localStorage.getItem("studentId")) {
+            
+            for (const key in students[i]) {
+                if (students[i].hasOwnProperty(key)) {
+                    
+                    if (key == "studentid") {
+                       studentId.innerHTML = students[i][key];
+                    }
+                    else if (key == "username") {
+                        studentUsername.innerHTML = students[i][key];  
+                    }
+                    else if (key == "dob") {
+                        studentDob.innerHTML = students[i][key];
+                    }
+                    else if (key == "email") {
+                        studentEmail.innerHTML = students[i][key];
+                    }
+                    else if (key == "gender") {
+                        studetGender.innerHTML = students[i][key];
+                    }
+                    else if (key == "bloodgroup") {
+                        studentBloodgroup.innerHTML = students[i][key];
+                    }
+                }   
+            }
+        }
+    }
+}
+
+// Adding Activity Functionality
+function addActivity() {
+    let name_activity = document.getElementById("activity_name").value;
+    let details_activity = document.getElementById("activity_details").value;
+    sessionStorage.setItem(name_activity, details_activity);
+    alert("Activity Added Successfully");
+}
+
+// Displaying Activity Functionaility
+function activityList() {
+    console.log('list function called');
+
+    var activity_list = document.getElementById("list_activities");
+    activity_list.style.display = "none";
+
+        if (sessionStorage.length < 0) {
+
+            document.getElementById("activity_id").style.visibility = "hidden";
+        }
+        if(sessionStorage.length> 1){
+            document.getElementById("activity_id").style.visibility = "visible";
+            activity_list.style.display = "block";
+
+            for (let j = 0; j < sessionStorage.length; j++) {
+                const key = sessionStorage.key(j);
+                
+                if (key != "username" && key != "IsThisFirstTime_Log_From_LiveServer" ) {
+
+                    let activityBody = document.getElementById("activity_id");
+
+                    let activtyRow = document.createElement("tr");
+
+                    let activityName = document.createElement("td");
+                    activityName.setAttribute("id", "activity_name");
+                    activityName.innerHTML = key;
+                    activity_list.appendChild(activityName);
+
+                    let activityDetails = document.createElement("td");
+                    activityDetails.setAttribute("id", "activity_details");
+                    activityDetails.innerHTML = sessionStorage.getItem(key);
+                    activity_list.appendChild(activityDetails);
+
+                    activtyRow.appendChild(activityName);
+                    activtyRow.appendChild(activityDetails);
+                
+                    activityBody.appendChild(activtyRow);
+                }
+            }
+        }
+    
 }

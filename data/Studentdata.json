@@ -11,8 +11,14 @@
             "Social-Studies": {"marks": "98", "grade": "A+"},
             "dob": "31/05/2001",
             "email": "pujari@gmail.com",
-            "gender": "male",
-            "bloodgroup": "B+"
+            "gender": "Male",
+            "bloodgroup": "B+",
+            "fathername": "Pujari Raj",
+            "fathermobileno": "8107672214",
+            "fatheremail": "raj@gmail.com",
+            "mothername": "Pujari Shreya",
+            "mothermobileno": "8107672514",
+            "motheremail": "shreya@gmail.com"
         },
         {
             "studentid" : "0109",
@@ -20,13 +26,19 @@
             "password": "Pass@131",
             "English": {"marks": "90", "grade": "A+"},
             "Hindi": {"marks": "70", "grade": "A+"},
-            "Maths": {"marks": "75", "grade": "A"},
-            "Sciene": {"marks": "89", "grade": "A+"},
-            "SocialStudies": {"marks": "89", "grade": "A+"},
+            "Mathematics": {"marks": "75", "grade": "A"},
+            "Science": {"marks": "89", "grade": "A+"},
+            "Social-Studies": {"marks": "89", "grade": "A+"},
             "dob": "13/04/2000",
-            "email": "rampujari@gmail.com",
-            "gender": "male",
-            "bloodgroup": "B+"
+            "email": "rajpujari@gmail.com",
+            "gender": "Female",
+            "bloodgroup": "B+",
+            "fathername": "Pujari Swami",
+            "fathermobileno": "8107672214",
+            "fatheremail": "swami@gmail.com",
+            "mothername": "Pujari Priya",
+            "mothermobileno": "8107672514",
+            "motheremail": "priya@gmail.com"
         },
         {
             "studentid" : "0110",
@@ -34,13 +46,19 @@
             "password": "Pass@152",
             "English": {"marks": "90", "grade": "A+"},
             "Hindi": {"marks": "72", "grade": "A+"},
-            "Maths": {"marks": "77", "grade": "A"},
-            "Sciene": {"marks": "89", "grade": "A+"},
-            "SocialStudies": {"marks": "92", "grade": "A+"},
+            "Mathematics": {"marks": "77", "grade": "A"},
+            "Science": {"marks": "89", "grade": "A+"},
+            "Social-Studies": {"marks": "92", "grade": "A+"},
             "dob": "13/04/1998",
-            "email": "arjun@gmail.com",
-            "gender": "female",
-            "bloodgroup": "B+"
+            "email": "sameera@gmail.com",
+            "gender": "Female",
+            "bloodgroup": "B+",
+            "fathername": "Pujari Sridhar",
+            "fathermobileno": "8107672214",
+            "fatheremail": "Sridhar@gmail.com",
+            "mothername": "Pujari Laxmi",
+            "mothermobileno": "8107672514",
+            "motheremail": "Laxmi@gmail.com"
         }
     ]
 }
