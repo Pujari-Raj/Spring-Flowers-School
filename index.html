@@ -264,20 +264,13 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
  
-  <!-- <script src="./js/script.js"></script> -->
   <script src="./js/schoolscript.js"></script>
   <script>
-    // document.getElementById("student_name").innerHTML = localStorage.getItem('username');
-    activityList();
-
-    // cpoint-4
+    // Accessing the username form localstorage
     document.getElementById("student_name").innerHTML = localStorage.getItem('username');
-    // console.log(sessionStorage.getItem('studentId'));
-
-    //
-    // const student_name = sessionStorage.getItem('username');
-    // sessionStorage.setItem('student_username', student_name);
-
+    
+    // Calling the activityList function when user add any Activity
+    activityList();
   </script> 
 </body>
 
