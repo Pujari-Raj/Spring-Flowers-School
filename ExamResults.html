@@ -93,8 +93,6 @@
     <div class="grades_container col-12 col-md-8 mx-auto p-5">
       <form class="">
         <div class="mb-3">
-          <!-- <select class="form-select" id="student_subject" aria-label="Default select example"
-            onChange="displayGrades()"> -->
           <select class="form-select" id="student_subject" aria-label="Default select example"
           onChange="Marks()">  
             <option selected>Select your subject</option>
@@ -103,7 +101,6 @@
             <option value="Mathematics">Mathematics</option>
             <option value="Science">Science</option>
             <option value="Social-Studies">Social Studies</option>
-            <!-- <option value="Physical-Activity">Physical-Activity</option> -->
           </select>
         </div>
         <div class="input-group mb-3">
@@ -213,12 +210,8 @@
     crossorigin="anonymous"></script>
   <script src="./js/schoolscript.js"></script>  
   <script>
-    // document.getElementById("student_name").innerHTML = localStorage.getItem('username');
-
-    // cpoint-4
+    // Accessing the username form localstorage
     document.getElementById("student_name").innerHTML = localStorage.getItem('username');
-    // console.log(sessionStorage.getItem('student_username'));
-    // document.getElementById("student_name").innerHTML = sessionStorage.getItem('username');
   </script>
 </body>
 
