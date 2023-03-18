@@ -10,7 +10,6 @@ for (i = 0; i < menuLength; i++) {
     }
 }
 
-// end
 
 // blank array for no.of.students
 let students = [];
@@ -44,7 +43,7 @@ function fetchLoginData() {
     });
 }
 
-//
+//getting form element's
 const user_username = document.getElementById("name");
 const user_pass = document.getElementById("password");
 
@@ -147,7 +146,7 @@ function DisplayMarks() {
     marks.value = "";
     grade.value = "";
 
-    //
+    // looping through all the subjects
     for (let i = 0; i < students.length; i++) {
         
         if (students[i].studentid === localStorage.getItem('studentId')) {
@@ -160,63 +159,6 @@ function DisplayMarks() {
                        grade.value = students[i][key]["grade"]; 
                     }
                 }
-            }
-        }
-    }
-}
-
-// function for fetching student profile data
-function studentprofileData() {
-    console.log('calling studentprofileData');
-    fetch('./data/Studentdata.json')
-    .then((resp) => resp.json())
-    .then((json) => {
-        students = JSON.parse(JSON.stringify(json)).student;
-
-        //
-        fetchStudentProfileData();
-    });
-}
-
-//
-function fetchStudentProfileData(){
-
-    console.log('calling fecthing data');
-    //
-    let studentId = document.getElementById("studentid");
-    let studentUsername = document.getElementById("studentusername");
-    let studentDob = document.getElementById("studentdob");
-    let studentEmail = document.getElementById("studentemail");
-    let studetGender = document.getElementById("studentgender");
-    let studentBloodgroup = document.getElementById("studentbloodgroup");
-
-    //
-    for (let i = 0; i < students.length; i++) {
-        
-        if (students[i].studentid == localStorage.getItem("studentId")) {
-            
-            for (const key in students[i]) {
-                if (students[i].hasOwnProperty(key)) {
-                    
-                    if (key == "studentid") {
-                       studentId.innerHTML = students[i][key];
-                    }
-                    else if (key == "username") {
-                        studentUsername.innerHTML = students[i][key];  
-                    }
-                    else if (key == "dob") {
-                        studentDob.innerHTML = students[i][key];
-                    }
-                    else if (key == "email") {
-                        studentEmail.innerHTML = students[i][key];
-                    }
-                    else if (key == "gender") {
-                        studetGender.innerHTML = students[i][key];
-                    }
-                    else if (key == "bloodgroup") {
-                        studentBloodgroup.innerHTML = students[i][key];
-                    }
-                }   
             }
         }
     }
@@ -237,6 +179,7 @@ function activityList() {
     var activity_list = document.getElementById("list_activities");
     activity_list.style.display = "none";
 
+        // displaying if any activity is stored in sessionStorage
         if (sessionStorage.length < 0) {
 
             document.getElementById("activity_id").style.visibility = "hidden";
