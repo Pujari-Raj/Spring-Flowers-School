@@ -99,12 +99,13 @@ const Login = () => {
 
     for (let i = 0; i < students.length; i++) {
     
-        if (students[i].username.length>0 && students[i].password.length>0) {
+        if (students[i].username.length<0 && students[i].password.length<0) {
             document.querySelector(".login_error").style.display = "block";
+            document.querySelector(".login_error").style.textAlign = "center";
             console.log('Invalid Login Credentials!!!!!');
         }
 
-        if (students[i].username == user_username && students[i].password == user_pass) {
+        else if (students[i].username == user_username && students[i].password == user_pass) {
             validUser = true;
             console.log('validUser');
             // sessionStorage.setItem("studentId", students[i].studentid);
