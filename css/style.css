@@ -102,6 +102,28 @@ ul li a.active {
   font-weight: 500;
 }
 
+/*Certifeid Teachers*/
+
+.certified_title{
+  color: #5d50c6;
+}
+
+.container-title{
+  color: #fda638;
+}
+
+.teacher .teacher-img{
+  width: 100%;
+  display: block;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.teacher .img-wrap {
+  height: 300px;
+}
+
 /* Cards(Our Features) */
 
 .features_heading {
