@@ -90,6 +90,18 @@ ul li a.active {
   transition: 1s;
 }
 
+/*About-Us*/
+
+.about_para{
+  color: #000 ;
+}
+
+.about_title{
+  color: #fd4d40;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 /* Cards(Our Features) */
 
 .features_heading {
@@ -141,8 +153,7 @@ ul li a.active {
   color: #1eaaf1;
 }
 
-.custom-card .card-body h5,
-p {
+.custom-card .card-body h5,p {
   color: #fff;
 }
 
