@@ -124,6 +124,33 @@ ul li a.active {
   height: 300px;
 }
 
+/*Testimonal*/
+
+.testimonal-container {
+  background: #d3e8de;
+}
+
+.testimonal-title {
+  color: #fd4d40;
+}
+
+.testimonal-person{
+  text-align: center;
+}
+
+.testimonal-person img{
+  width: 90px;
+  border-radius: 50%;
+  margin: 0 auto -45px auto;
+  border: 4px solid #fff;
+  border-color: #fdb62f;
+}
+
+.testimonal-content {
+  background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
 /* Cards(Our Features) */
 
 .features_heading {
