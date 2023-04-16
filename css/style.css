@@ -151,6 +151,57 @@ ul li a.active {
     padding: 20px;
     margin-top: 20px;
 }
+
+/**/
+
+.blog-container{
+  position: relative;
+}
+
+.meta{
+  position: absolute;
+  top: 189px;
+  /* left: 6px; */
+  background-color: #5d50c6;
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+}
+
+.meta a{
+  color: #fff;
+}
+
+.blog-img {
+  display: block;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 275px;
+  position: relative;
+}
+
+.blog-content a{
+  color: #000000;
+  font-size: 18px;
+}
+
+.blog-btn{
+  font-size: 0.95rem;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  padding: 12px 13px;
+  background: #58c665;
+  border: 1px solid transparent;
+}
+
+.blog-btn:hover{
+  color: #fff;
+  background-color: #4a9052;
+  border: 1px solid transparent;
+}
+
 /* Cards(Our Features) */
 
 .features_heading {
