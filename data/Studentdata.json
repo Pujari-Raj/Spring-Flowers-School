@@ -21,6 +21,26 @@
             "motheremail": "shreya@gmail.com"
         },
         {
+            "studentid" : "0101",
+            "username": "Guest",
+            "password": "Guest@123",
+            "English": {"marks": "88", "grade": "A+"},
+            "Hindi": {"marks": "95", "grade": "A+"},
+            "Mathematics": {"marks": "80", "grade": "A"},
+            "Science": {"marks": "85", "grade": "A+"},
+            "Social-Studies": {"marks": "98", "grade": "A+"},
+            "dob": "11/02/2003",
+            "email": "guest@gmail.com",
+            "gender": "Male",
+            "bloodgroup": "B+",
+            "fathername": "Guest User",
+            "fathermobileno": "8107672214",
+            "fatheremail": "userguest@gmail.com",
+            "mothername": "Guest Girl",
+            "mothermobileno": "8107672514",
+            "motheremail": "guest@gmail.com"
+        },
+        {
             "studentid" : "0109",
             "username": "Raj Pujari",
             "password": "Pass@131",
