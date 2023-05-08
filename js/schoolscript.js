@@ -120,7 +120,7 @@ const Login = () => {
         }
     }
     if (validUser) {
-        window.location.href = "index.html";
+        window.location.href = "Welcome.html";
     }
 }
 
