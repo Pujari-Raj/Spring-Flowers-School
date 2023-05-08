@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <!---Google-Fonts--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,100;1,200;1,300&display=swap"
+      rel="stylesheet" />
+    <!---Font-awesome--->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet" />
+    <!---Custom-CSS--->
+    <link rel="stylesheet" href="./css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <!---Google-Fonts--->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,100;1,200;1,300&display=swap"
-    rel="stylesheet" />
-  <!---Font-awesome--->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-  <!---Custom-CSS--->
-  <link rel="stylesheet" href="./css/style.css" />
-  
-  <title>Spring Flowers School</title>
-</head>
-
-<body>
-  <!---Navbar-Start--->
-  <section class="banner-image">
+    <title>Student Login</title>
+  </head>
+  <body>
+      <!---Navbar-Start--->
+  <section class="login-banner-image">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="">
           <img src="./assets/spring_flowers_logo.png" class="web_logo" alt="" srcset="" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -34,38 +33,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="./timeTable.html">Time Table</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="./ExamResults.html">Exam Results</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="./ExtaActivities.html">Extra Activities</a>
-            </li>
-          </ul>
-          <div class="">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="student_name" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Student
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item border-bottom" target="_blank" href="./Profile.html">Profile</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" target="" href="./StudentLogin.html">Logout</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </nav>
@@ -80,8 +47,8 @@
           </h1>
         </div>
         <div class="">
-          <button type="button" class="btn btn-secondary custom-btn">
-            Visit Us To Know More
+          <button type="button" class="btn btn-secondary custom-btn login-btn">
+            Log In To Know More  <span class=""><i class="fa-solid fa-arrow-down"></i></span>
           </button>
         </div>
       </div>
@@ -89,355 +56,43 @@
     <!-- Banner Image-End-->
   </section>
 
-  <!---features-cards--->
-  <section class="">
-    <div class="container-fluid my-5">
-      <h2 class="text-center features_heading">What We Offer</h2>
-      <div class="row my-5">
-        <div class="col-lg-3 col-md-6">
-          <div class="card custom-card Teacher-card">
-            <div class="card-icon d-flex align-items-center justify-content-center">
-              <span class="card_icon"><i class="fa-solid fa-user-graduate"></i></span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Certified Teachers</h5>
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Neque quos unde obcaecati quas consequatur fugit odio.
-                Recusandae, quod.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card custom-card special-ed-card">
-            <div class="card-icon d-flex align-items-center justify-content-center">
-              <span class="card_icon"><i class="fa-solid fa-book-open-reader"></i></span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special Education</h5>
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Neque quos unde obcaecati quas consequatur fugit odio.
-                Recusandae, quod.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card custom-card lib-card">
-            <div class="card-icon d-flex align-items-center justify-content-center">
-              <span class="card_icon"><i class="fa-solid fa-book"></i></span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Our Library</h5>
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Neque quos unde obcaecati quas consequatur fugit odio.
-                Recusandae, quod.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card custom-card certificate-card">
-            <div class="card-icon d-flex align-items-center justify-content-center">
-              <span class="card_icon"><i class="fa-solid fa-certificate"></i></span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Global Certifications</h5>
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Neque quos unde obcaecati quas consequatur fugit odio.
-                Recusandae, quod.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---features-cards-end--->
-
-  <!---About-Us--->
-  <section class="bg-light ">
-    <div class="container mb-4">
-      <div class="row">
-        <div class="col-md-6 mb-5">
-          <img src="./assets/img_1.jpg" class="img-fluid" alt="childrens_img" srcset="" />
-        </div>
-        <div class="col-md-5 m-auto mt-0">
-          <span class="about_title">About Us</span>
-          <h3>Bring Fun Life To Your Kids</h3>
-          <p class="about_para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            architecto cum nisi praesentium dolores, animi temporibus tempora
-            qui nemo, eaque eum ipsa soluta libero, possimus dolor dolore sint
-            veniam ullam sapiente perspiciatis? Cumque ratione cum culpa in
-            natus minima non ipsam delectus sed facilis totam quam ad fugiat
-            provident excepturi, incidunt cupiditate possimus blanditiis
-            laboriosam explicabo facere? Animi quis, qui, minus eveniet
-            quibusdam exercitationem eos harum expedita maiores blanditiis
-            aut. Aliquid magni hic vel omnis!
-          </p>
-          <button type="submit" class="btn subscribe-btn">
-            More About Us
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---About-Us-end--->
-
-  <!---Certified-Teachers--->
-  <section class="">
-    <div class="container-fluid mb-5">
-      <div class="row justify-content-center pb-2 mb-5">
-        <div class="col-md-8 text-center">
-          <h2 class="container-title mb-4"><span class="certified_title">Certified</span> Teachers</h2>
-          <p class="about_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laborum minima vitae
-            error, aliquam nesciunt repudiandae sed temporibus nam!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="teacher">
-            <div class="img-wrap d-flex align-items-stretch">
-              <div class="teacher-img" style="background-image: url(assets/teacher-1.jpg);"></div>
-            </div>
+  <!---Login Form--->
+  <div class="container mt-5">
+    <div class="row justify-content-center align-items-center  p-2">
+      <div class="m-1 col-sm-8 col-md-6 col-lg-4 shadow-sm p-3 mb-5 bg-white border rounded">
+          <div class="">
             <div class="text-center">
-              <h3 class="text-light-emphasis ">Swapna Krupa</h3>
-              <span>Teacher</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
+              <img src="https://img.freepik.com/free-vector/illustration-businessman_53876-5856.jpg?w=740&t=st=1677682307~exp=1677682907~hmac=9c88e72182bdf4535737b51e11446c3f33b88cfef5dc1bb0d695879d6b4e94b7" 
+              alt="avatar_logo" class="" width=150px height=150px srcset="" />
             </div>
+            <p class="text-center text-capitalize  login_title">Login To Get Started</p>
+            <form class="form-check" id="login_form">  
+                <div class="input-control">
+                  <label for="name">Username</label>
+                  <input id="name" type="text">
+                  <div class="error"></div>
+              </div>
+              <div class="input-control">
+                  <label for="password">Password</label>
+                  <input id="password" type="password">
+                  <div class="error"></div>
+              </div>
+                <!-- <button class="btn login_btn btn-primary mt-4" type="button" onclick="validateForm()">Login</button> -->
+                <button class="btn login_btn btn-primary mt-4" type="button" onclick="fetchLoginData()">Login</button>
+            </form>
+            <div class="">
+              <p class="login_error"> Invalid Username Or Password !!</p>
+            </div>  
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="teacher">
-            <div class="img-wrap d-flex align-items-stretch">
-              <div class="teacher-img" style="background-image: url(assets/teacher-2.jpg);"></div>
-            </div>
-            <div class="text-center">
-              <h3 class="text-light-emphasis ">Monica Buffay</h3>
-              <span>Teacher</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="teacher">
-            <div class="img-wrap d-flex align-items-stretch">
-              <div class="teacher-img" style="background-image: url(assets/teacher-3.jpg);"></div>
-            </div>
-            <div class="text-center">
-              <h3 class="text-light-emphasis ">Rachel Gellar</h3>
-              <span>Teacher</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="teacher">
-            <div class="img-wrap d-flex align-items-stretch">
-              <div class="teacher-img" style="background-image: url(assets/teacher-4.jpg);"></div> 
-            </div>
-            <div class="text-center">
-              <h3 class="text-light-emphasis ">Meera Tribbani</h3>
-              <span>Teacher</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <!---Certified-Teachers-end--->
-
-  <!---Testimonals--->
-  <section class="testimonal-container">
-    <div class="container">
-      <div class="row justify-content-center pb-2 mb-5 mt-5 pt-5">
-        <div class="col-md-8 text-center">
-          <h2 class="testimonal-title mb-4">What Parents Say About Us</h2>
-          <p class="about_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laborum minima vitae
-            error, aliquam nesciunt repudiandae sed temporibus nam!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="testimonal-person">
-            <img src="assets/person_1.jpg" class="img-fluid" alt="" srcset="">
-            <div class="testimonal-content">
-              <h3 class="text-light-emphasis ">Raj Krupa</h3>
-              <span>Father</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="testimonal-person">
-            <img src="assets/person_2.jpg" alt="" srcset="">
-            <div class="testimonal-content">
-              <h3 class="text-light-emphasis ">Swapna Krishnan</h3>
-              <span>Mother</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="testimonal-person">
-            <img src="assets/person_3.jpg" alt="" srcset="">
-            <div class="testimonal-content">
-              <h3 class="text-light-emphasis ">Riya Fernades</h3>
-              <span>Mother</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="testimonal-person">
-            <img src="assets/person_4.jpg" alt="" srcset="">
-            <div class="testimonal-content">
-              <h3 class="text-light-emphasis ">Nani Kodlera</h3>
-              <span>Father</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="testimonal-person">
-            <img src="assets/person_5.jpg" alt="" srcset="">
-            <div class="testimonal-content">
-              <h3 class="text-light-emphasis ">Rachel Dree</h3>
-              <span>Teacher</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="testimonal-person">
-            <img src="assets/person_3.jpg" alt="" srcset="">
-            <div class="testimonal-content">
-              <h3 class="text-light-emphasis ">Monica Gellar</h3>
-              <span>Teacher</span>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---Testimonals-end--->
-
-  <!---Blog-Section--->
-  <section class="">
-    <div class="container-fluid mb-4">
-      <div class="row justify-content-center pb-2 mb-5 mt-5 pt-5">
-        <div class="col-md-8 text-center">
-          <h2 class=" mb-4">Recent Blog</h2>
-          <p class="about_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laborum minima vitae
-            error, aliquam nesciunt repudiandae sed temporibus nam!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-2">
-          <div class="blog-container">
-            <a href="#" class="blog-img" style="background-image: url(assets/image_1.jpg);"></a>
-            <div class="meta">
-              <div><a href="#"><span class="icon-calendar"></span> 18</a></div>
-              <div><a href="#"><span class="icon-person"></span> January</a></div>
-              <div><a href="#"><span class="icon-chat"></span> 2023</a></div>
-            </div>
-            <div class="blog-content">
-              <h3><a href="#" class="">Skills To Develop Your Child Memory</a></h3>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates incidunt minus?</p>
-              <button type="button" class="btn btn-secondary blog-btn">
-                Read More <span class=""><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="blog-container">
-            <a href="#" class="blog-img" style="background-image: url(assets/image_2.jpg);"></a>
-            <div class="meta">
-              <div><a href="#"><span class="icon-calendar"></span> 25</a></div>
-              <div><a href="#"><span class="icon-person"></span> February</a></div>
-              <div><a href="#"><span class="icon-chat"></span> 2023</a></div>
-            </div>
-            <div class="blog-content">
-              <h3><a href="#" class="">Skills To Develop Your Child Memory</a></h3>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates incidunt minus?</p>
-              <button type="button" class="btn btn-secondary blog-btn">
-                Read More <span class=""><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="blog-container">
-            <a href="#" class="blog-img" style="background-image: url(assets/image_3.jpg);"></a>
-            <div class="meta">
-              <div><a href="#"><span class="icon-calendar"></span> 27</a></div>
-              <div><a href="#"><span class="icon-person"></span> March</a></div>
-              <div><a href="#"><span class="icon-chat"></span> 2023</a></div>
-            </div>
-            <div class="blog-content">
-              <h3><a href="#" class="">Skills To Develop Your Child Memory</a></h3>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates incidunt minus?</p>
-              <button type="button" class="btn btn-secondary blog-btn">
-                Read More <span class=""><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="blog-container">
-            <a href="#" class="blog-img" style="background-image: url(assets/image_4.jpg);"></a>
-            <div class="meta">
-              <div><a href="#"><span class="icon-calendar"></span> 2</a></div>
-              <div><a href="#"><span class="icon-person"></span> April</a></div>
-              <div><a href="#"><span class="icon-chat"></span> 2023</a></div>
-            </div>
-            <div class="blog-content">
-              <h3><a href="#" class="">Skills To Develop Your Child Memory</a></h3>
-              <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates incidunt minus?</p>
-              <button type="button" class="btn btn-secondary blog-btn">
-                Read More <span class=""><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---Blog-Section-End--->
-
-  <!---ExtraActivities--->
-  <div class="container" id="list_activities">
-    <h2 class="text-center features_heading">Extra Activities List</h2>
-    <div class="table-responsive">
-      <table class="table table-hover table-light table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Activity</th>
-            <th scope="col">About Activity</th>
-          </tr>
-        </thead>
-        <tbody id="activity_id">
-          <!-- <tr>
-            <th scope="row" id="activity_id"></th>
-            <td id="activity_name"></td>
-            <td  id="activity_details"></td>
-          </tr> -->
-        </tbody>
-      </table>
     </div>
   </div>
 
   <!---footer-start---->
   <footer class="text-center text-lg-start footer-section">
+
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      
       <div class="me-5 d-none d-lg-block">
         <span class="connect_tite">Get Connected With Us </span>
       </div>
@@ -462,22 +117,22 @@
       <div class="container text-center text-md-start mt-5">
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact Us
+            </h6>
             <form>
               <div class="form-group mb-4">
-                <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter email" />
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                  else.</small>
+                <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
               </div>
-              <button type="submit" class="btn subscribe-btn">
-                Subscribe
-              </button>
+              <button type="submit" class="btn subscribe-btn">Subscribe</button>
             </form>
           </div>
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Quick links</h6>
+            <h6 class="text-uppercase fw-bold mb-4">
+              Quick links
+            </h6>
             <p>
               <a href="#!" class="quick_links">Home</a>
             </p>
@@ -494,10 +149,8 @@
 
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Have a Questions ?</h6>
-            <p>
-              <i class="fas fa-home me-3"></i>Spring Flowers, Whitefield, SH
-              35, Near Dommasandra Circle, Bengaluru, Karnataka 562125
-            </p>
+            <p><i class="fas fa-home me-3"></i>Spring Flowers, Whitefield, SH 35, Near Dommasandra Circle, Bengaluru, Karnataka
+              562125</p>
             <p>
               <i class="fas fa-envelope me-3"></i>
               springflower@gmail.com
@@ -509,30 +162,23 @@
     </section>
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Copyright All Rights Reserved:
-      <a class="text-reset fw-bold" href="https://github.com/Pujari-Raj">Pujari Basvaraj
-      </a>
+      <a class="text-reset fw-bold" href="https://github.com/Pujari-Raj">Pujari Basvaraj </a>
     </div>
     <!-- Copyright -->
   </footer>
   <!---footer-end---->
 
-  <!---JS--->
-  <!---Bootstrap-JS--->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <!---JS--->
+    <!---Bootstrap-JS--->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   
-  <script src="./js/schoolscript.js"></script>
-  <script>
-    // Accessing the username form localstorage
-    document.getElementById("student_name").innerHTML =
-      localStorage.getItem("username");
-
-    // Calling the activityList function when user add any Activity
-    activityList();
-  </script>
-</body>
-
+    <!---Custom-JS--->
+    <script src="./js/schoolscript.js"></script>
+  </body>
 </html>
