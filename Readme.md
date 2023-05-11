@@ -10,6 +10,8 @@ Technologies/ Tools Used:
 
 ![badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+#### Dummy credentials for login (Username- Guest, Password- Guest@123)
+
 Click on the below given link to get the preview of the WebPage
 
 <a href="https://spring-flowers-school.vercel.app/">
