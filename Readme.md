@@ -10,8 +10,8 @@ Technologies/ Tools Used:
 
 ![badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-#### This project will get updated on multiple intervals , only after final code project preview will posted.
-
 Click on the below given link to get the preview of the WebPage
 
-![badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+<a href="https://spring-flowers-school.vercel.app/">
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+</a>
